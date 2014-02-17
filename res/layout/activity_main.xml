@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/creditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/address"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="40dp"
+        android:text="@string/credit_card" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastName"
+        android:layout_below="@+id/lastName"
+        android:layout_marginTop="40dp"
+        android:text="@string/address" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstName"
+        android:layout_below="@+id/firstName"
+        android:layout_marginTop="40dp"
+        android:text="@string/last_name" />
+
+    <EditText
+        android:id="@+id/firstNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/firstName"
+        android:layout_alignBottom="@+id/firstName"
+        android:layout_toRightOf="@+id/creditCard"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lastName"
+        android:layout_alignBottom="@+id/lastName"
+        android:layout_toRightOf="@+id/creditCard"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/addressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_toRightOf="@+id/creditCard"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/creditCardValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/creditCard"
+        android:layout_alignBottom="@+id/creditCard"
+        android:layout_toRightOf="@+id/creditCard"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/first_name" />
+
+    <Button
+        android:id="@+id/saveData"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/processData"
+        android:layout_alignBottom="@+id/processData"
+        android:layout_centerHorizontal="true"
+        android:text="@string/save_button" />
+
+    <Button
+        android:id="@+id/processData"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="70dp"
+        android:text="@string/process_data_button" />
+
+    <Button
+        android:id="@+id/reportData"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveData"
+        android:layout_alignBottom="@+id/saveData"
+        android:layout_alignParentRight="true"
+        android:text="@string/report_button" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/processData"
+        android:layout_alignRight="@+id/reportData"
+        android:layout_below="@+id/saveData"
+        android:layout_marginTop="17dp"
+        android:text="@string/close_button" />
+
+</RelativeLayout>

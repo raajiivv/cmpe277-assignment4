@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/preferencesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/preferences"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/preferencesTextView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:maxLines = "500"
+		android:scrollbars = "vertical"
+        android:layout_alignLeft="@+id/preferencesHeader"
+        android:layout_below="@+id/preferencesHeader" />
+
+    <TextView
+        android:id="@+id/sqliteHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/preferencesTextView"
+        android:layout_centerVertical="true"
+        android:text="@string/sqlite"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sqliteTextView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:maxLines = "500"
+		android:scrollbars = "vertical"
+        android:layout_alignLeft="@+id/sqliteHeader"
+        android:layout_below="@+id/sqliteHeader"
+        android:text="" />
+
+</RelativeLayout>
